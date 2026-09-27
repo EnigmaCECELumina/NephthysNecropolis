@@ -1,0 +1,17 @@
+{
+  "name": "apex-codex-core",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-first executive decision and delegation command engine.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "deploy": "node src/cli.js deploy",
+    "summary": "node src/cli.js summary",
+    "verify": "node src/cli.js verify",
+    "backup": "node src/cli.js backup"
+  }
+}

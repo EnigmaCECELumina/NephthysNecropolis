@@ -1,0 +1,33 @@
+{
+  "storage": {
+    "directory": "./data",
+    "ledgerFile": "events.jsonl"
+  },
+  "priorityMatrix": {
+    "critical": 5,
+    "strategic": 3,
+    "standard": 2,
+    "deferred": 1
+  },
+  "capacityCheckIns": {
+    "enabled": true,
+    "scale": {
+      "minimum": 1,
+      "maximum": 5,
+      "labels": ["depleted", "low", "steady", "strong", "full"]
+    },
+    "required": false
+  },
+  "backups": {
+    "enabled": true,
+    "onWrite": true,
+    "directory": "./backups",
+    "keepLatest": 14
+  },
+  "weeklySummary": {
+    "enabled": true,
+    "outputDirectory": "./summaries",
+    "fileName": "weekly-summary.md",
+    "schedule": "Run `npm run summary` weekly using your operating system scheduler."
+  }
+}
